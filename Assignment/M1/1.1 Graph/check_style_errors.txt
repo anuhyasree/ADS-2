@@ -114,6 +114,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 32 errors.
 Starting audit...
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
