@@ -88,20 +88,20 @@ class GraphList implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public String display(final String[] data) {
-        String s = "";
-        s += vertices + " vertices, " + edge + " edges" + '\n';
-        if (edge == 0) {
-            s += "No edges ";
-        } else {
-            for (int v = 0; v < vertices; v++) {
-                s += data[v] + ": ";
-                for (int w : adj[v]) {
-                    s += data[w] + " ";
-                }
-                s += '\n';
-            }
-        }
-        return s.substring(0, s.length() - 1);
-    }
+    // public String display(final String[] data) {
+    //     String s = "";
+    //     s += vertices + " vertices, " + edge + " edges" + '\n';
+    //     if (edge == 0) {
+    //         s += "No edges ";
+    //     } else {
+    //         for (int v = 0; v < vertices; v++) {
+    //             s += data[v] + ": ";
+    //             for (int w : adj[v]) {
+    //                 s += data[w] + " ";
+    //             }
+    //             s += '\n';
+    //         }
+    //     }
+    //     return s.substring(0, s.length() - 1);
+    // }
 }
