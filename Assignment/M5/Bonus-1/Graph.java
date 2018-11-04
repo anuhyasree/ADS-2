@@ -1,19 +1,22 @@
-/**
+/**.
  * Class for graph.
  */
 class Graph {
-    /**
+    /**.
      * integer variable vertices.
      */
     private  int vertices;
-    /**
+    /**.
      * integer variable edges.
      */
     private int edges;
-    /**
+    /**.
      * array of bag type.
      */
     private Bag<Integer>[] adj;
+    /**.
+     * { var_description }
+     */
     private boolean[] marked;
     /**
      * Constructs the object.
@@ -98,7 +101,7 @@ class Graph {
     public Bag[] matrix() {
         return adj;
     }
-    /**
+    /**.
      * list method.
      * Time complexity : O(1)
      * @return  array.
@@ -112,19 +115,26 @@ class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        String inpute = System.getProperty("line.separator");
+        s.append(vertices + " vertices, " + edges + " edges " + inpute);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
             }
-            s.append(NEWLINE);
+            s.append(inpute);
         }
         return s.toString();
     }
 
-    public boolean hasSelfLoop(int v) {
+    /**.
+     * Determines if it has self loop.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     True if has self loop, False otherwise.
+     */
+    public boolean hasSelfLoop(final int v) {
         for (int w : adj(v)) {
             if (v == w) {
                 return true;
@@ -134,7 +144,14 @@ class Graph {
     }
     // does this graph have two parallel edges?
     // side effect: initialize cycle to be two parallel edges
-    public boolean hasParallelEdges(int v) {
+    /**.
+     * Determines if it has parallel edges.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     True if has parallel edges, False otherwise.
+     */
+    public boolean hasParallelEdges(final int v) {
         marked = new boolean[vertex()];
         for (int w : adj(v)) {
             if (marked[w]) {
@@ -142,10 +159,6 @@ class Graph {
             }
             marked[w] = true;
         }
-
-        // for (int w : adj(v)) {
-        //     marked[w] = false;
-        // }
         return false;
     }
 }
