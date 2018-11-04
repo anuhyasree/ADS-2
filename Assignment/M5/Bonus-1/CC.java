@@ -1,3 +1,6 @@
+/**.
+ * Class for cc.
+ */
 public class CC {
     /**.
      * { var_description }
@@ -19,15 +22,15 @@ public class CC {
     /**.
      * Constructs the object.
      *
-     * @param      Grap  The grap
+     * @param      grap  The grap
      */
-    public CC(final Graph Grap) {
-        marked = new boolean[Grap.vertex()];
-        id = new int[Grap.vertex()];
-        size = new int[Grap.vertex()];
-        for (int v = 0; v < Grap.vertex(); v++) {
+    public CC(final Graph grap) {
+        marked = new boolean[grap.vertex()];
+        id = new int[grap.vertex()];
+        size = new int[grap.vertex()];
+        for (int v = 0; v < grap.vertex(); v++) {
             if (!marked[v]) {
-                dfs(Grap, v);
+                dfs(grap, v);
                 count++;
             }
         }
@@ -38,16 +41,16 @@ public class CC {
     /**.
      * { function_description }
      *
-     * @param      Grr   The grr
+     * @param      grr   The grr
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph Grr, final int v) {
+    private void dfs(final Graph grr, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : Grr.adj(v)) {
+        for (int w : grr.adj(v)) {
             if (!marked[w]) {
-                dfs(Grr, w);
+                dfs(grr, w);
             }
         }
     }
@@ -121,9 +124,9 @@ public class CC {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        int q = marked.length;
+        if (v < 0 || v >= q) {
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (q - 1));
         }
     }
 
@@ -137,3 +140,4 @@ public class CC {
     }
 
 }
+

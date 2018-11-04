@@ -1,14 +1,9 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:24:27: Name 'Grap' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:44:34: Name 'Grr' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:124:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:126: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:129: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
