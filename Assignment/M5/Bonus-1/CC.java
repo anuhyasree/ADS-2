@@ -126,7 +126,9 @@ public class CC {
     private void validateVertex(final int v) {
         int q = marked.length;
         if (v < 0 || v >= q) {
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (q - 1));
+            throw new IllegalArgumentException("vertex " + v +
+                                               " is not between 0 and "
+                                               + (q - 1));
         }
     }
 
