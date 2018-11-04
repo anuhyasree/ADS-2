@@ -127,8 +127,8 @@ public class CC {
         int q = marked.length;
         if (v < 0 || v >= q) {
             throw new IllegalArgumentException("vertex " + v +
-                                               " is not between 0 and "
-                                               + (q - 1));
+                                               " is not between 0 and " +
+                                               (q - 1));
         }
     }
 
