@@ -1,21 +1,23 @@
 public class CC {
-    private boolean[] marked;   // marked[v] = has vertex v been marked?
-    private int[] id;           // id[v] = id of connected component containing v
-    private int[] size;         // size[id] = number of vertices in given component
-    private int count;          // number of connected components
+    private boolean[] marked;
+    private int[] id;
+    private int[] size;
+    private int count;
+
+
 
     /**
      * Computes the connected components of the undirected graph {@code G}.
      *
      * @param G the undirected graph
      */
-    public CC(Graph G) {
-        marked = new boolean[G.vertex()];
-        id = new int[G.vertex()];
-        size = new int[G.vertex()];
-        for (int v = 0; v < G.vertex(); v++) {
+    public CC(final Graph Grap) {
+        marked = new boolean[Grap.vertex()];
+        id = new int[Grap.vertex()];
+        size = new int[Grap.vertex()];
+        for (int v = 0; v < Grap.vertex(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(Grap, v);
                 count++;
             }
         }
@@ -39,18 +41,18 @@ public class CC {
     // }
 
     // depth-first search for a Graph
-    private void dfs(Graph G, int v) {
+    private void dfs(final Graph Grr, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : Grr.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(Grr, w);
             }
         }
     }
 
-    // depth-first search for an EdgeWeightedGraph
+    // depth-first search for an EdgrreWeightedGraph
     // private void dfs(EdgeWeightedGraph G, int v) {
     //     marked[v] = true;
     //     id[v] = count;
@@ -63,27 +65,26 @@ public class CC {
     //     }
     // }
 
-
-    /**
-     * Returns the component id of the connected component containing vertex {@code v}.
+    /**.
+     * { function_description }
      *
-     * @param  v the vertex
-     * @return the component id of the connected component containing vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public int id(int v) {
+    public int id(final int v) {
         validateVertex(v);
         return id[v];
     }
 
-    /**
-     * Returns the number of vertices in the connected component containing vertex {@code v}.
+    /**.
+     * { function_description }
      *
-     * @param  v the vertex
-     * @return the number of vertices in the connected component containing vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public int size(int v) {
+    public int size(final int v) {
         validateVertex(v);
         return size[id[v]];
     }
@@ -97,49 +98,52 @@ public class CC {
         return count;
     }
 
-    /**
-     * Returns true if vertices {@code v} and {@code w} are in the same
-     * connected component.
+    /**.
+     * { function_description }
      *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @return {@code true} if vertices {@code v} and {@code w} are in the same
-     *         connected component; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless {@code 0 <= w < V}
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public boolean connected(int v, int w) {
+    public boolean connected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
     }
 
-    /**
-     * Returns true if vertices {@code v} and {@code w} are in the same
-     * connected component.
+    /**.
+     * { function_description }
      *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @return {@code true} if vertices {@code v} and {@code w} are in the same
-     *         connected component; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     * @throws IllegalArgumentException unless {@code 0 <= w < V}
-     * @deprecated Replaced by {@link #connected(int, int)}.
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    @Deprecated
-    public boolean areConnected(int v, int w) {
+    public boolean areConnected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+
+    /**.
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     */
+    private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
     }
 
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int[] idarr() {
         return id;
     }
