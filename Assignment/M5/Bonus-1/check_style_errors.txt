@@ -3,22 +3,12 @@ Audit done.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:12:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:14:27: Expected @param tag for 'Grap'. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:14:27: Name 'Grap' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:29:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:44:34: Expected @param tag for 'Grr'. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:24:27: Name 'Grap' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:44:34: Name 'Grr' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:44:49: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:137:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:138: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:139: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:124:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M5\Bonus-1\CC.java:126: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...

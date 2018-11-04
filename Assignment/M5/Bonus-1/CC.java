@@ -1,15 +1,25 @@
 public class CC {
+    /**.
+     * { var_description }
+     */
     private boolean[] marked;
+    /**.
+     * { var_description }
+     */
     private int[] id;
+    /**.
+     * { var_description }
+     */
     private int[] size;
+    /**.
+     * { var_description }
+     */
     private int count;
 
-
-
-    /**
-     * Computes the connected components of the undirected graph {@code G}.
+    /**.
+     * Constructs the object.
      *
-     * @param G the undirected graph
+     * @param      Grap  The grap
      */
     public CC(final Graph Grap) {
         marked = new boolean[Grap.vertex()];
@@ -23,24 +33,14 @@ public class CC {
         }
     }
 
-    /**
-     * Computes the connected components of the edge-weighted graph {@code G}.
-     *
-     * @param G the edge-weighted graph
-     */
-    // public CC(EdgeWeightedGraph G) {
-    //     marked = new boolean[G.V()];
-    //     id = new int[G.V()];
-    //     size = new int[G.V()];
-    //     for (int v = 0; v < G.V(); v++) {
-    //         if (!marked[v]) {
-    //             dfs(G, v);
-    //             count++;
-    //         }
-    //     }
-    // }
-
     // depth-first search for a Graph
+
+    /**.
+     * { function_description }
+     *
+     * @param      Grr   The grr
+     * @param      v     { parameter_description }
+     */
     private void dfs(final Graph Grr, final int v) {
         marked[v] = true;
         id[v] = count;
@@ -51,19 +51,6 @@ public class CC {
             }
         }
     }
-
-    // depth-first search for an EdgrreWeightedGraph
-    // private void dfs(EdgeWeightedGraph G, int v) {
-    //     marked[v] = true;
-    //     id[v] = count;
-    //     size[count]++;
-    //     for (Edge e : G.adj(v)) {
-    //         int w = e.other(v);
-    //         if (!marked[w]) {
-    //             dfs(G, w);
-    //         }
-    //     }
-    // }
 
     /**.
      * { function_description }
@@ -135,8 +122,9 @@ public class CC {
      */
     private void validateVertex(final int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
+        if (v < 0 || v >= V) {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        }
     }
 
     /**.
