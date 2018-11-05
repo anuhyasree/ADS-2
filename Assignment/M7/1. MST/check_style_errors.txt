@@ -2,13 +2,10 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:83: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:108: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:115: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:123:56: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:124: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:128:48: '+' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M7\1. MST\KruskalMST.java:129: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -80,8 +80,9 @@ public class KruskalMST {
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
-                              total, weight());
+            System.err.printf(
+                "Weight of edges does not equal weight(): %f vs. %f\n",
+                total, weight());
             return false;
         }
 
@@ -105,14 +106,17 @@ public class KruskalMST {
             }
         }
 
-        // check that it is a minimal spanning forest (cut optimality conditions)
+        // check that it is a minimal spanning
+        //forest (cut optimality conditions)
         for (Edge e : edges()) {
 
             // all edges in MST except e
             uf = new UF(G.V());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
-                if (f != e) uf.union(x, y);
+                if (f != e) {
+                    uf.union(x, y);
+                }
             }
 
             // check that e is min weight edge in crossing cut
@@ -120,7 +124,8 @@ public class KruskalMST {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f +
+                        System.err.println("Edge "
+                                           + f +
                                            " violates cut optimality conditions");
                         return false;
                     }
