@@ -1,14 +1,27 @@
+/**.
+ * Class for kruskal mst.
+ */
 public class KruskalMST {
+    /**.
+     * { var_description }
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
 
-    private double weight;                        // weight of MST
-    private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
-
-    /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     * @param G the edge-weighted graph
+    /**.
+     * { var_description }
      */
-    public KruskalMST(EdgeWeightedGraph G) {
+    private double weight;
+    /**.
+     * { var_description }
+     */
+    private Queue<Edge> mst = new Queue<Edge>();
+
+    /**.
+     * Constructs the object.
+     *
+     * @param      grr   The grr
+     */
+    public KruskalMST(final EdgeWeightedGraph grr) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
         for (Edge e : G.edges()) {
@@ -32,25 +45,34 @@ public class KruskalMST {
         assert check(G);
     }
 
-    /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     * @return the edges in a minimum spanning tree (or forest) as
-     *    an iterable of edges
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Edge> edges() {
         return mst;
     }
 
-    /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public double weight() {
         return weight;
     }
-    
+
     // check optimality conditions (takes time proportional to E V lg* V)
-    private boolean check(EdgeWeightedGraph G) {
+
+    /**.
+     * { function_description }
+     *
+     * @param      grr   The grr
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private boolean check(final EdgeWeightedGraph grr) {
 
         // check total weight
         double total = 0.0;
@@ -58,7 +80,8 @@ public class KruskalMST {
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", total, weight());
+            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
+                              total, weight());
             return false;
         }
 
@@ -91,13 +114,14 @@ public class KruskalMST {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
             }
-            
+
             // check that e is min weight edge in crossing cut
             for (Edge f : G.edges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f + " violates cut optimality conditions");
+                        System.err.println("Edge " + f +
+                                           " violates cut optimality conditions");
                         return false;
                     }
                 }
