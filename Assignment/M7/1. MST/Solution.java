@@ -1,219 +1,237 @@
 import java.util.Scanner;
-
-class Edge implements Comparable<Edge> { 
-
-    private final int v;
-    private final int w;
-    private final double weight;
-
-    public Edge(int v1, int w1, double weight1) {
-        this.v = v1;
-        this.w = w1;
-        this.weight = weight1;
-    }
-
+/**
+ * Class for solution.
+ */
+final class Solution {
     /**
-     * Returns the weight of this edge.
-     *
-     * @return the weight of this edge
+     * Constructs the object.
      */
-    public double weight() {
-        return weight;
-    }
+    private Solution() {
 
-    /**
-     * Returns either endpoint of this edge.
-     *
-     * @return either endpoint of this edge
-     */
-    public int either() {
-        return v;
     }
-
     /**
-     * Returns the endpoint of this edge that is different from the given vertex.
+     * { function_description }.
      *
-     * @param  vertex one endpoint of this edge
-     * @return the other endpoint of this edge
-     * @throws IllegalArgumentException if the vertex is not one of the
-     *         endpoints of this edge
+     * @param      args  The arguments
      */
-    public int other(int vertex) {
-        if (vertex == v) {
-        	return w;
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int vertices = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
+        Edge edgeObj;
+        EdgeWeightedGraph graph
+            = new EdgeWeightedGraph(vertices);
+        for (int i = 0; i < edges; i++) {
+            String[] tokens = scan.nextLine().split(" ");
+            edgeObj = new Edge(Integer.parseInt(tokens[0]),
+                               Integer.parseInt(tokens[1]),
+                               Double.parseDouble(tokens[2]));
+            graph.addEdge(edgeObj);
         }
-        else if (vertex == w) {
-        	return v;
-        }
-        else {
-        	throw new IllegalArgumentException("Illegal endpoint");
-        }
-    }
-
-    /**
-     * Compares two edges by weight.
-     * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation inherited from {@code Object}.
-     *
-     * @param  that the other edge
-     * @return a negative integer, zero, or positive integer depending on whether
-     *         the weight of this is less than, equal to, or greater than the
-     *         argument edge
-     */
-    @Override
-    public int compareTo(Edge that) {
-        return Double.compare(this.weight, that.weight);
-    }
-
-    /**
-     * Returns a string representation of this edge.
-     *
-     * @return a string representation of this edge
-     */
-    public String toString() {
-        return String.format("%d-%d %.5f", v, w, weight);
+        MSTree mstObj = new MSTree(graph);
+        double result = mstObj.total();
+        System.out.format("%.5f", result);
     }
 }
-
+/**
+ * Class for edge.
+ */
+class Edge implements Comparable<Edge> {
+    /**
+     * { var_description }.
+     */
+    private int vertexOne;
+    /**
+     * { var_description }.
+     */
+    private int vertexTwo;
+    /**
+     * { var_description }.
+     */
+    private double weight;
+    /**
+     * Constructs the object.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     * @param      wei   The wei
+     */
+    Edge(final int v, final int w, final double wei) {
+        this.vertexOne = v;
+        this.vertexTwo = w;
+        this.weight = wei;
+    }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int either() {
+        return vertexOne;
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int other(final int v) {
+        if (vertexOne == v) {
+            return vertexTwo;
+        }
+        return vertexOne;
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(final Edge that) {
+        if (this.weight < that.weight) {
+            return -1;
+        } else if (this.weight > that.weight) {
+            return 1;
+        }
+        return 0;
+    }
+    /**
+     * Gets the weight.
+     *
+     * @return     The weight.
+     */
+    public double getWeight() {
+        return this.weight;
+    }
+}
+/**
+ * Class for edge weighted graph.
+ */
 class EdgeWeightedGraph {
-    private final int V;
-    private int E;
+    /**
+     * .
+     */
+    private int vertices;
+    /**
+     * .
+     */
     private Bag<Edge>[] adj;
-
-    public EdgeWeightedGraph(int V) {
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Edge>();
+    /**
+     * Constructs the object.
+     *
+     * @param      v     { parameter_description }
+     */
+    EdgeWeightedGraph(final int v) {
+        this.vertices = v;
+        adj = new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
-
-     /**
-     * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
-     *
-     * @param  G the edge-weighted graph to copy
-     */
-    public EdgeWeightedGraph(EdgeWeightedGraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < G.V(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : G.adj[v]) {
-                reverse.push(e);
-            }
-            for (Edge e : reverse) {
-                adj[v].add(e);
-            }
-        }
-    }
-
     /**
-     * Returns the number of vertices in this edge-weighted graph.
+     * Adds an edge.
      *
-     * @return the number of vertices in this edge-weighted graph
+     * @param      e     { parameter_description }
      */
-    public int V() {
-        return V;
+    public void addEdge(final Edge e) {
+        int first = e.either();
+        int second = e.other(first);
+        adj[first].add(e);
+        adj[second].add(e);
     }
-
     /**
-     * Returns the number of edges in this edge-weighted graph.
+     * { function_description }.
      *
-     * @return the number of edges in this edge-weighted graph
-     */
-    public int E() {
-        return E;
-    }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    }
-
-    /**
-     * Adds the undirected edge {@code e} to this edge-weighted graph.
-     *
-     * @param  e the edge
-     * @throws IllegalArgumentException unless both endpoints are between {@code 0} and {@code V-1}
-     */
-    public void addEdge(Edge e) {
-        int v = e.either();
-        int w = e.other(v);
-        validateVertex(v);
-        validateVertex(w);
-        adj[v].add(e);
-        adj[w].add(e);
-        E++;
-    }
-
-    /**
-     * Returns the edges incident on vertex {@code v}.
-     *
-     * @param  v the vertex
-     * @return the edges incident on vertex {@code v} as an Iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
-    public Iterable<Edge> adj(int v) {
-        validateVertex(v);
-        return adj[v];
-    }
-
-    /**
-     * Returns the degree of vertex {@code v}.
-     *
-     * @param  v the vertex
-     * @return the degree of vertex {@code v}               
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
-    public int degree(int v) {
-        validateVertex(v);
-        return adj[v].size();
-    }
-
-    /**
-     * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph, use foreach notation:
-     * {@code for (Edge e : G.edges())}.
-     *
-     * @return all edges in this edge-weighted graph, as an iterable
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
-            int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
-                    list.add(e);
-                }
-                // add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
-                    selfLoops++;
-                }
+        for (int i = 0; i < vertices; i++) {
+            for (Edge e : adj(i)) {
+                list.add(e);
             }
         }
         return list;
     }
+    /**
+     * { function_description }.
+     *
+     * @param      vertex  The vertex
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Edge> adj(final int vertex) {
+        return adj[vertex];
+    }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int vertices() {
+        return this.vertices;
+    }
+
 }
-
-public final class Solution {
-	private Solution() {
-
-	}
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		int vertices = Integer.parseInt(s.nextLine());
-		int edges = Integer.parseInt(s.nextLine());
-		EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
-		while (s.hasNext()) {
-			String[] tokens = s.nextLine().split(" ");
-			Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
-			ewg.addEdge(edge);
-		}
-		KruskalMST krus = new KruskalMST(ewg);
-		System.out.format("%.5f", krus.weight());
-	}
+/**
+ * Class for ms tree.
+ */
+class MSTree {
+    /**
+     *the graph object.
+     */
+    private EdgeWeightedGraph graph;
+    /**
+     *queue to give the mst.
+     */
+    private Queue<Edge> mst;
+    /**
+     *intializes  the values.
+     *time complexity is O(ElogE).
+     *where e is the edges.
+     * @param      g  graph object.
+     */
+    MSTree(final EdgeWeightedGraph g) {
+        graph = g;
+        mst = new Queue<Edge>();
+        MinPQ<Edge> pq = new MinPQ<Edge>();
+        for (Edge edge : graph.edges()) {
+            pq.insert(edge);
+        }
+        UF ufObj = new UF(graph.vertices());
+        while (!pq.isEmpty()
+                && mst.size() < graph.vertices() - 1) {
+            Edge edge = pq.delMin();
+            int vertexOne = edge.either();
+            int vertexTwo = edge.other(vertexOne);
+            if (!ufObj.connected(vertexOne, vertexTwo)) {
+                ufObj.union(vertexOne, vertexTwo);
+                mst.enqueue(edge);
+            }
+        }
+    }
+    /**
+     *it returns all the edges on mst.
+     *
+     * @return  queue which contains all
+     * vertices.
+     */
+    public Iterable<Edge> edges() {
+        return mst;
+    }
+    /**
+     *this method returns the total weight.
+     *of mst.
+     *time complexity is O(E)
+     * @return weight of mst.
+     */
+    public double total() {
+        double sum = 0.0;
+        for (Edge e : edges()) {
+            sum += e.getWeight();
+        }
+        return sum;
+    }
 }
