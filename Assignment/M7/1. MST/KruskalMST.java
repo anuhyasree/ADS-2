@@ -125,8 +125,8 @@ public class KruskalMST {
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
                         System.err.println(
-                            "Edge " + f +
-                            " violates cut optimality conditions");
+                            "Edge " + f
+                            + " violates cut optimality conditions");
                         return false;
                     }
                 }
