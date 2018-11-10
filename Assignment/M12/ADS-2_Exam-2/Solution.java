@@ -66,6 +66,25 @@ public final class Solution {
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
+            String[] input = scan.nextLine().split(" ");
+            int src = Integer.parseInt(input[0]);
+            int via = Integer.parseInt(input[1]);
+            int dst = Integer.parseInt(input[2]);
+            DijkstraUndirectedSP dijkstraObj2 = new DijkstraUndirectedSP(list, src);
+            double sum = 0;
+            if (dijkstraObj2.hasPathTo(via)) {
+                sum += dijkstraObj2.distTo(via);
+                String s = src + " ";
+                int vert = src;
+                for (Edge edg : dijkstraObj2.pathTo(via)) {
+                    s += edg.other(vert) + " ";
+                    vert = edg.other(vert);
+                }
+                System.out.println(sum);
+                System.out.println(s.trim());
+            }
+
+
             break;
 
         default:
