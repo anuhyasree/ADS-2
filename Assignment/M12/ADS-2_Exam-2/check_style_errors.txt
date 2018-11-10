@@ -10,8 +10,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M12\ADS-2_Exam-2\Solution.java:73: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
