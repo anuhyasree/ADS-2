@@ -20,16 +20,16 @@ public class Solution {
 		// Take the Graph input here...
 		Scanner scan = new Scanner(System.in);
 		int cities = Integer.parseInt(scan.nextLine());
-        int road = Integer.parseInt(scan.nextLine());
-        EdgeWeightedGraph list = new EdgeWeightedGraph(cities);
-        for (int i = 0; i < road; i++) {
-            String[] tokens = scan.nextLine().split(" ");
-            if (!tokens[0].equals(tokens[1])) {
-                Edge obj = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]),
-                             Integer.parseInt(tokens[2]));
-                list.addEdge(obj);
-            }
-	    }
+		int road = Integer.parseInt(scan.nextLine());
+		EdgeWeightedGraph list = new EdgeWeightedGraph(cities);
+		for (int i = 0; i < road; i++) {
+			String[] tokens = scan.nextLine().split(" ");
+			if (!tokens[0].equals(tokens[1])) {
+				Edge obj = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]),
+				                    Integer.parseInt(tokens[2]));
+				list.addEdge(obj);
+			}
+		}
 		String caseToGo = null;
 		switch (caseToGo) {
 		case "Graph":
