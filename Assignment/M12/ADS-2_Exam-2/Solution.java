@@ -48,10 +48,8 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(" ");
             int source = Integer.parseInt(tokens[0]);
             int destination = Integer.parseInt(tokens[1]);
-            DijkstraUndirectedSP dijkstraObj =
-                new DijkstraUndirectedSP(list, source);
+            DijkstraUndirectedSP dijkstraObj = new DijkstraUndirectedSP(list, source);
             double distBetween = dijkstraObj.distTo(destination);
-            System.out.println(distBetween);
             if (dijkstraObj.hasPathTo(destination)) {
                 System.out.println(distBetween);
             } else {
