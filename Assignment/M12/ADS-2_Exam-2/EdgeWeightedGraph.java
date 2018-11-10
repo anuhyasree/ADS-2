@@ -3,11 +3,6 @@
  */
 public class EdgeWeightedGraph {
     /**
-    * new line character.
-    */
-    private static final String NEWLINE = System.getProperty("line.separator");
-
-    /**
      * {Vertices}.
      */
     private int vertices;
@@ -107,22 +102,25 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
-
     /**
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
      */
     public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(vertices + " vertices " + edges + " edges" + NEWLINE);
-        for (int v = 0; v < vertices; v++) {
-            s.append(v + ": ");
-            for (Edge e : adj[v]) {
-                s.append(e + "  ");
+        String s = "";
+        s += vertices + " vertices " + edges + " edges" + '\n';
+        if (edges == 0) {
+            s += "No edges ";
+        } else {
+            for (int v = 0; v < vertices; v++) {
+                s += v + ": ";
+                for (Edge w : adj[v]) {
+                    s += w + "  ";
+                }
+                s += '\n';
             }
-            s.append(NEWLINE);
         }
-        return s.toString() + "\n";
+        return s.substring(0, s.length() - 1);
     }
 }
