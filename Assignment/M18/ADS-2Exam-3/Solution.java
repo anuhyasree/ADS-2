@@ -88,46 +88,45 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-		In in = new In(file);
-		String[] dictionary = in.readAllStrings();
-		for (int i = 0; i < dictionary.length; i++) {
-			if (st.get(dictionary[i].toLowerCase()) == null) {
-				st.put(dictionary[i].toLowerCase(), 1);
-			} else {
-				st.put(dictionary[i].toLowerCase(), st.get(dictionary[i].toLowerCase()) + 1);
+		String[] dict = toReadFile(file);
+		for (String word : dict) {
+			String[] words = word.split(" ");
+			for (String str : words) {
+				str = str.toLowerCase();
+				if (st.contains(str)) {
+					int wordCount = st.get(str);
+					wordCount += 1;
+					st.put(str, wordCount);
+				} else {
+					st.put(str, 1);
+				}
 			}
 		}
+
 		return st;
 	}
 
 }
 
 class T9 {
-	private TST dict;
-	private BinarySearchST<String, Integer> tempst;
-
+	private TST<Integer> tst;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-		dict = new TST();
-		this.tempst = st;
-		for (String word: st.keys()) {
-			dict.put(word, st.get(word));
+		tst = new TST<Integer>();
+		for (String str : st.keys()) {
+			tst.put(str, st.get(str));
 		}
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		//dict = new TST();
-		//this.tempst = st;
-		//for (String word: st.keys()) {
-			//dict.put(word, st.get(word));
-		return null;
+		return tst.keysWithPrefix(prefix);
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return dict.keysWithPrefix(t9Signature);
+		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
