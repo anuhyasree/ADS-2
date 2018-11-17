@@ -122,7 +122,8 @@ final class Solution {
      */
     public static BinarySearchST<String,
     Integer> loadDictionary(final String file) {
-        BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+        BinarySearchST<String, Integer>  st;
+        st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] dict = toReadFile(file);
         for (String word : dict) {
@@ -165,7 +166,7 @@ final class T9 {
      *
      * @param      st    { parameter_description }
      */
-    protected T9(BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String str : st.keys()) {
@@ -229,3 +230,4 @@ final class T9 {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
+
