@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**.
  * Class for solution.
  */
-public class Solution {
+final class Solution {
 
     /**.
      * Constructs the object.
@@ -30,7 +30,8 @@ public class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash;
+            hash = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -99,12 +100,28 @@ public class Solution {
     }
 
     // Don't modify this method.
+
+    /**.
+     * { function_description }
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
 
-    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
+    /**.
+     * Loads a dictionary.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static BinarySearchST<String,
+    Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] dict = toReadFile(file);
@@ -130,7 +147,7 @@ public class Solution {
 /**.
  * Class for t 9.
  */
-class T9 {
+final class T9 {
     /**.
      * Constructs the object.
      */
@@ -148,7 +165,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(BinarySearchST<String, Integer> st) {
+    protected T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String str : st.keys()) {
@@ -191,7 +208,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+                                           final int k) {
         // your code goes here
         return null;
     }

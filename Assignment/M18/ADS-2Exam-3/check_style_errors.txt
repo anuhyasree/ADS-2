@@ -376,17 +376,10 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:7: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:33: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:102:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:107: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:107:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:108: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:151:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:151:15: Parameter st should be final. [FinalParameters]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:194: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:125: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\Solution.java:168:18: Parameter st should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\M18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
