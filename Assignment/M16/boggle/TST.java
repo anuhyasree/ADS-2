@@ -131,9 +131,16 @@ public class TST<Value> {
         }
         root = put(root, key, val, 0);
     }
-    boolean hasPrefix(String str){
-        Node<Value> x = get(root,str,0);
-        if(x==null){
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      str   The string
+     *
+     * @return     True if has prefix, False otherwise.
+     */
+    boolean hasPrefix(final String str) {
+        Node<Value> x = get(root, str, 0);
+        if (x == null) {
             return false;
         }
         return true;
