@@ -48,11 +48,17 @@ public class Solution{
 	    percolation perc = new percolation(vert);
 	    boolean[][] grid = new boolean[vert][vert];
 	    Graph graph = new Graph(vert*vert+2);
-	    while (true){
+	    try {
+	    	while (true){
 	    	int row = input.nextInt();
 	    	int col = input.nextInt();
 	    	grid[row-1][col-1]=true;
 	    }
+	} catch(Exception e) {
+
+	}finally{
+		System.out.println(perc.connected(grid,graph));
+	}
 
 	}
 }
