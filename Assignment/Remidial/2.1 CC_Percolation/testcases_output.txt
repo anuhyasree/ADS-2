@@ -4,7 +4,7 @@ false
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 26
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -14,7 +14,7 @@ false
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -40,7 +40,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -50,7 +50,7 @@ false
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -60,7 +60,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -70,7 +70,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -80,7 +80,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -90,7 +90,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -100,7 +100,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -110,7 +110,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -120,7 +120,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -130,7 +130,7 @@ false
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -140,7 +140,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -150,7 +150,7 @@ false
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -160,7 +160,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -170,7 +170,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -180,7 +180,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -190,7 +190,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 48
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -200,7 +200,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -210,7 +210,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -220,7 +220,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 102
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
@@ -230,7 +230,7 @@ true
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 98
-	at percolation.connected(Solution.java:34)
+	at percolation.connecte(Solution.java:34)
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
