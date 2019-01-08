@@ -18,20 +18,20 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
 	at Solution.main(Solution.java:65)
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-false
+true
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+true
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########

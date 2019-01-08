@@ -4,8 +4,8 @@ class percolation {
 
 	public int vertex;
 
-	percolation(int vertex) {
-		this.vertex = vertex;
+	percolation(int v) {
+		vertex = v;
 	}
 
 	public boolean connected(boolean[][] grid, Graph graph) {
@@ -19,7 +19,7 @@ class percolation {
 					graph.addEdge(value, vertex * vertex);
 				}
 				if (i == vertex - 1) {
-					graph.addEdge(value, vertex * vertex);
+					graph.addEdge(value, vertex * vertex + 1);
 				}
 				if (i - 1 >= 0 && grid[i - 1][j]) {
 					graph.addEdge(value, combine(i - 1, j));
