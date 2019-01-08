@@ -1,17 +1,21 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 26
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -35,15 +39,19 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -51,7 +59,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -59,7 +69,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -67,7 +79,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -75,7 +89,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -83,7 +99,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -91,7 +109,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -99,15 +119,19 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
-########## Testcase 13: Passed ##########
+########## Testcase 13: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -115,15 +139,19 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
-########## Testcase 15: Passed ##########
+########## Testcase 15: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -131,7 +159,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -139,7 +169,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -147,7 +179,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -155,7 +189,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 48
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -163,7 +199,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -171,7 +209,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 14
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -179,7 +219,9 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 102
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -187,6 +229,8 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 98
+	at percolation.connected(Solution.java:31)
+	at Solution.main(Solution.java:62)
 ----------------------------------------
 
