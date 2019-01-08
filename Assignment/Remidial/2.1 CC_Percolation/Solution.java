@@ -23,10 +23,13 @@ class percolation {
 				}
 				if (i - 1 >= 0 && grid[i - 1][j]) {
 					graph.addEdge(value, combine(i - 1, j));
-
 				}
 				if (i + 1 < vertex && grid[i + 1][j]) {
 					graph.addEdge(value, combine(i + 1, j));
+				}
+				if (i - 1 >= 0 && grid[i][j - 1]) {
+					graph.addEdge(value, combine(i, j - 1));
+
 				}
 				if (i + 1 < vertex && grid[i][j+j]) {
 					graph.addEdge(value, combine(i, j + 1));
