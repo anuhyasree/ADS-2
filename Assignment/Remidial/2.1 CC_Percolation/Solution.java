@@ -8,7 +8,7 @@ class percolation {
 		vertex = v;
 	}
 
-	public boolean connecte(boolean[][] grid, Graph graph) {
+	public boolean conn(boolean[][] grid, Graph graph) {
 		int value = 0;
 		for (int i = 0; i < vertex; i++ ) {
 			for (int j = 0; j < vertex; j++ ) {
@@ -62,7 +62,7 @@ public class Solution {
 		} catch (Exception e) {
 
 		} finally {
-			System.out.println(perc.connecte(grid, graph));
+			System.out.println(perc.conn(grid, graph));
 		}
 
 	}
