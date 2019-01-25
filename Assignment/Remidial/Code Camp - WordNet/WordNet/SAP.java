@@ -23,9 +23,14 @@ public class SAP {
         BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(
             this.graph, w);
         HashSet<Integer> s1 = new HashSet<Integer>();
+        HashSet<Integer> s2 = new HashSet<Integer>();
         for (int i = 0; i < this.graph.vertices(); i++) {
             if (bfs1.hasPathTo(i)) {
                 s1.add(i);
+            }
+            if (bfs2.hasPathTo(i)) {
+
+                s2.add(i);
             }
 
         }
