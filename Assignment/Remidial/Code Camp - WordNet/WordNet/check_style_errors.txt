@@ -183,14 +183,14 @@ Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:53:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:53:25: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:53:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:78:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:78:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:78:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:79:23: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:98:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:98:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:98:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:98:46: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:82:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:82:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:82:23: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:83:23: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:102:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:102:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:102:25: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:102:46: Parameter w should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 26 errors.
 Starting audit...
