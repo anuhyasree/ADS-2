@@ -166,8 +166,33 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:5:20: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:7:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:7:20: Variable 'dist' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:9:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:9:20: Variable 'ancestor' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:12:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:12:16: Parameter dig should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:20:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:20:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:20:23: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:20:30: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:51:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:51:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:51:25: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:51:32: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:81:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:81:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:81:23: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:82:23: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:101:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:101:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:101:25: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\SAP.java:101:46: Parameter w should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 26 errors.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Code Camp - WordNet\WordNet\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
