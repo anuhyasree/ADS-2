@@ -34,6 +34,7 @@ public class SAP {
             }
 
         }
+        s1.retainAll(s2);
         for (Integer i : s1) {
             if (dist >= bfs1.distTo(i) + bfs2.distTo(i)) {
                 dist = bfs1.distTo(i) + bfs2.distTo(i);
