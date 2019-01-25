@@ -65,13 +65,14 @@ public class WordNet {
 
     // distance between nounA and nounB (defined below)
     public int distance(String nounA, String nounB) {
-        // if(nounA.equals(null) || nounA.equals(null)) {
-        //     return 0;
-        // } else {
-        sap = new SAP(this.g);
-        int dist = sap.length(synset1.get(nounA), synset1.get(nounB));
-        // }
-        return dist;
+        if (nounA.equals(null) || nounA.equals(null)) {
+            return 0;
+        } else {
+            sap = new SAP(this.g);
+            int dist = sap.length(synset1.get(nounA), synset1.get(nounB));
+            return dist;
+        }
+
     }
 
     public Digraph getGraph() {
