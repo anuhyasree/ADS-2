@@ -43,6 +43,7 @@ class Graph {
 	public void Listoutput(int v, int e, String[] str) throws Exception {
 		if (e <= 1 && v <= 1) {
 			System.out.println(V() + " vertices, " + E() + " edges");
+			throw new Exception("No edges");
 		} else {
 			System.out.println(V() + " vertices, " + E() + " edges");
 			for (int i = 0; i < str.length ; i++ ) {
@@ -58,6 +59,7 @@ class Graph {
 	public void Matrixoutput(int v, int e)  throws Exception {
 		if (e <= 1 && v <= 1) {
 			System.out.println(V() + " vertices, " + E() + " edges");
+			throw new Exception("No edges");
 		} else {
 			System.out.println(V() + " vertices, " + E() + " edges");
 			int[][] mat = new int[v][e];
