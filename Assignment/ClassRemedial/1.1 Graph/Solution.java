@@ -42,33 +42,39 @@ class Graph {
 	}
 	public void Listoutput(int v, int e, String[] str) throws Exception {
 		if (e <= 1 && v <= 1) {
-			System.out.println(V() + "vertices" + E() + "edges");
+			System.out.println(V() + " vertices, " + E() + " edges");
 		} else {
+			System.out.println(V() + " vertices, " + E() + " edges");
 			for (int i = 0; i < str.length ; i++ ) {
-				String strg = " ";
-				strg = str[i] + " ";
+				String strg = "";
+				strg = str[i] + ": ";
 				for (int ii : agj[i]) {
-					strg = strg + str[ii] + " ";
+					strg += str[ii] + " ";
 				}
+				System.out.println(strg);
 			}
 		}
 	}
-	public void Matrixoutput(int v, int e)  throws Exception{
-		System.out.println(V() + "vertices" + E() + "edges");
-		int[][] mat = new int[v][e];
-		for (int i = 0; i < v ; i++ ) {
-			for (int j = 0; j < v ; j++) {
-				if (hasEdge(i, j)) {
-					mat[i][j] = 1;
+	public void Matrixoutput(int v, int e)  throws Exception {
+		if (e <= 1 && v <= 1) {
+			System.out.println(V() + " vertices, " + E() + " edges");
+		} else {
+			System.out.println(V() + " vertices, " + E() + " edges");
+			int[][] mat = new int[v][e];
+			for (int i = 0; i < v ; i++ ) {
+				for (int j = 0; j < v ; j++) {
+					if (hasEdge(i, j)) {
+						mat[i][j] = 1;
+					}
 				}
 			}
-		}
-		for (int i = 0; i < v ; i++ ) {
-			for (int j = 0; j < V ; j++) {
-				System.out.println(mat[i][j] + " ");
+			for (int i = 0; i < v ; i++ ) {
+				for (int j = 0; j < V ; j++) {
+					System.out.print(mat[i][j] + " ");
+				}
+				System.out.println();
 			}
 		}
-
 	}
 
 }
@@ -101,8 +107,8 @@ class Solution {
 				System.out.println(e.getMessage());
 			}
 			break;
-			default:
-				break;
+		default:
+			break;
 		}
 
 	}
