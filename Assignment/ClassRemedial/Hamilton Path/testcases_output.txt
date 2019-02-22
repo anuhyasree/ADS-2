@@ -1,10 +1,9 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 True
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:8)
+True
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -12,8 +11,10 @@ Expected Output:
 False
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:8)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 12
+	at Digraph.validateVertex(Digraph.java:157)
+	at Digraph.addEdge(Digraph.java:168)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -21,8 +22,10 @@ Expected Output:
 True
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:8)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 12
+	at Digraph.validateVertex(Digraph.java:157)
+	at Digraph.addEdge(Digraph.java:168)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -30,8 +33,10 @@ Expected Output:
 True
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:8)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:157)
+	at Digraph.addEdge(Digraph.java:168)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,8 +44,10 @@ Expected Output:
 False
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:8)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 4
+	at Digraph.validateVertex(Digraph.java:157)
+	at Digraph.addEdge(Digraph.java:168)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -48,7 +55,6 @@ Expected Output:
 False
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:8)
+True
 ----------------------------------------
 
