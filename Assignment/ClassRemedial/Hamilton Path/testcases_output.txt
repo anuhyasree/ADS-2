@@ -1,20 +1,20 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 True
 
 Your Output: 
-True
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:157)
+	at Digraph.addEdge(Digraph.java:169)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 False
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 12
-	at Digraph.validateVertex(Digraph.java:157)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:13)
+False
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -22,10 +22,7 @@ Expected Output:
 True
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 12
-	at Digraph.validateVertex(Digraph.java:157)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:13)
+False
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -33,21 +30,15 @@ Expected Output:
 True
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:157)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:13)
+False
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 False
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 4
-	at Digraph.validateVertex(Digraph.java:157)
-	at Digraph.addEdge(Digraph.java:168)
-	at Solution.main(Solution.java:13)
+False
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -55,6 +46,9 @@ Expected Output:
 False
 
 Your Output: 
-True
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
+	at Digraph.validateVertex(Digraph.java:157)
+	at Digraph.addEdge(Digraph.java:169)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 

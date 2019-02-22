@@ -10,10 +10,10 @@ class Solution {
 		while (input.hasNext()) {
 			String strg = input.nextLine();
 			String[] values = strg.split(" ");
-			di.addEdge(Integer.parseInt(values[0])-1, Integer.parseInt(values[1])-1);
+			di.addEdge(Integer.parseInt(values[0]), Integer.parseInt(values[1]));
 		}
 		Topological tp = new Topological(di);
-		if (tp.isDAG()){
+		if (!tp.hasOrder()){
 			System.out.println("True");
 		} else{
 			System.out.println("False");
