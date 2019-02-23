@@ -21,7 +21,7 @@ class Solution {
         }
         count++;
       }
-      System.out.println(s.substring(0, s.length() - 1));
+      System.out.println(s.substring(0, s.length() - 2));
     } else{
       System.out.println("No Self Beneficiaries.");
     }
