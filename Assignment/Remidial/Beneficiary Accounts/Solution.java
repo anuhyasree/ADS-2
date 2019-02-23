@@ -13,7 +13,15 @@ class Solution {
     }
     DirectedCycle cy = new DirectedCycle(di);
     if (cy.hasCycle()) {
-      System.out.println("true");
+      String s = " ";
+      int count = 0;
+      for(Integer i: cy.cycle()) {
+        if(count > 0) {
+          s += i + ", ";
+        }
+        count++;
+      }
+      System.out.println(s.substring(0, s.length() - 2));
     } else{
       System.out.println("No Self Beneficiaries.");
     }
