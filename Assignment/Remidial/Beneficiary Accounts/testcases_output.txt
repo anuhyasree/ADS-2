@@ -27,7 +27,7 @@ Expected Output:
 1, 2
 
 Your Output: 
-No Self Beneficiaries.
+true
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,7 +35,7 @@ Expected Output:
 1, 2
 
 Your Output: 
-No Self Beneficiaries.
+true
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
