@@ -13,7 +13,7 @@ class Solution {
     }
     DirectedCycle cy = new DirectedCycle(di);
     if (cy.hasCycle()) {
-      String s = " ";
+      String s = "";
       int count = 0;
       for(Integer i: cy.cycle()) {
         if(count > 0) {
