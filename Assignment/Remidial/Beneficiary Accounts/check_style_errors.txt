@@ -1,20 +1,52 @@
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Digraph.java:2:8: Unused import - java.util.Scanner. [UnusedImports]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Digraph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Digraph.java:33:30: Name 'V1' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Digraph.java:75:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
+Checkstyle ends with 5 errors.
 Starting audit...
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:31: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:47:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:48:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:49:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:50:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:50:31: Variable 'lists' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:51: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:51:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:58:26: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:58:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:62: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:63: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:66: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:67:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:67:22: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:67:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:67:33: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:73: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:79:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:99: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:106: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:107: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:116:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:122: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\DirectedCycle.java:126: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:4:3: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:4:27: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:18:10: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:19:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:25:11: 'else' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:25:11: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:21:59: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\Beneficiary Accounts\Solution.java:21:75: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
