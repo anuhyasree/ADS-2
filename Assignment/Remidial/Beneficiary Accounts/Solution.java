@@ -12,7 +12,7 @@ class Solution {
       di.addEdge(Integer.parseInt(values[0]), Integer.parseInt(values[1]));
     }
     DirectedCycle cy = new DirectedCycle(di);
-    if (cy.hasCycle()) {
+    if (!cy.hasCycle()) {
       for (Stack<Integer> s : cy.lists) {
         TreeSet<Integer> treeset = new TreeSet<Integer>();
         for (Integer i : s) {
