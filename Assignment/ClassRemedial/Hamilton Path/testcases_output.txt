@@ -9,36 +9,36 @@ Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not b
 	at Solution.main(Solution.java:13)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 False
 
 Your Output: 
-False
+True
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 True
 
 Your Output: 
-False
+True
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 True
 
 Your Output: 
-False
+True
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 False
 
 Your Output: 
-False
+True
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########

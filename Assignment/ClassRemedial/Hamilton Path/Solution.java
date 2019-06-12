@@ -14,9 +14,9 @@ class Solution {
 		}
 		Topological tp = new Topological(di);
 		if (!tp.hasOrder()){
-			System.out.println("True");
-		} else{
 			System.out.println("False");
+		} else{
+			System.out.println("True");
 		}
 	}
 }
