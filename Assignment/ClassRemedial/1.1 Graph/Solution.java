@@ -59,7 +59,7 @@ public class Solution {
 			System.out.println(g.display(str));
 		} else {
 			AdjMatrixGraph mst = new AdjMatrixGraph(v);
-			for (int i = 0; i < v ; i++ ) {
+			for (int i = 0; i < e ; i++ ) {
 				String[] matrix = input.nextLine().split(" ");
 
 				int a = Integer.parseInt(matrix[0]);
