@@ -15,9 +15,9 @@ public class Solution{
 		}
 		DirectedCycle dick = new DirectedCycle(di);
 		if (dick.hasCycle()){
-			System.out.println("True");
+			System.out.println("Cycle exists.");
 		} else{
-			System.out.println("False");
+			System.out.println("Cycle doesn't exists.");
 		}
 
 	}
