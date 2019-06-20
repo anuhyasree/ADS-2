@@ -202,10 +202,11 @@ Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:13: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:17: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:26:25: Name 'I' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:29:36: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:31:23: 'else' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Solution.java:31:23: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\ClassRemedial\Hamilton Path\Stack.java:29: Line is longer than 80 characters (found 89). [LineLength]

@@ -9,24 +9,12 @@ Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not b
 	at Solution.main(Solution.java:13)
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 False
 
 Your Output: 
-8
-7
-2
-3
-0
-6
-9
-10
-11
-12
-1
-5
-4
+False
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -34,19 +22,7 @@ Expected Output:
 True
 
 Your Output: 
-8
-7
-2
-3
-0
-6
-9
-10
-11
-12
-1
-5
-4
+False
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -54,22 +30,15 @@ Expected Output:
 True
 
 Your Output: 
-2
-0
-1
-3
+False
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 False
 
 Your Output: 
-2
-0
-1
-3
-4
+False
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########

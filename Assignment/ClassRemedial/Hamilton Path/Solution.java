@@ -23,14 +23,14 @@ class Solution {
 		// 	System.out.println("False");
 		// }
 		Topological tl = new Topological(di);
-		for(int I : tl.order()) {
-			System.out.println(I);
-		}
-		// if (!tp.hasOrder()){
-		// 	System.out.println("True");
-		// } else{
-		// 	System.out.println("False");
+		// for(int I : tl.order()) {
+		// 	//System.out.println(I);
 		// }
+		if (!tl.hasOrder()){
+			System.out.println("True");
+		} else{
+			System.out.println("False");
+		}
 	}
 }
 
