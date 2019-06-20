@@ -14,23 +14,50 @@ Expected Output:
 False
 
 Your Output: 
-True
+8
+7
+2
+3
+0
+6
+9
+10
+11
+12
+1
+5
+4
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 True
 
 Your Output: 
-True
+8
+7
+2
+3
+0
+6
+9
+10
+11
+12
+1
+5
+4
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 True
 
 Your Output: 
-True
+2
+0
+1
+3
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -38,7 +65,11 @@ Expected Output:
 False
 
 Your Output: 
-True
+2
+0
+1
+3
+4
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########

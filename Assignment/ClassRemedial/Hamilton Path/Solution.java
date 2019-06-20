@@ -12,12 +12,25 @@ class Solution {
 			String[] values = strg.split(" ");
 			di.addEdge(Integer.parseInt(values[0]), Integer.parseInt(values[1]));
 		}
-		Topological tp = new Topological(di);
-		if (!tp.hasOrder()){
-			System.out.println("False");
-		} else{
-			System.out.println("True");
+		// DirectedCycle dc = new DirectedCycle(di);
+		// if(dc.hasCycle()) {
+		// 	HashMap<Integer, Integer> hp = new HashMap<Integer, Integer>();
+		// 	Topological tp = new Topological(di);
+		// 	for(int i: tp.order()) {
+		// 		System.out.println(i);
+		// 	}
+		// } else {
+		// 	System.out.println("False");
+		// }
+		Topological tl = new Topological(di);
+		for(int I : tl.order()) {
+			System.out.println(I);
 		}
+		// if (!tp.hasOrder()){
+		// 	System.out.println("True");
+		// } else{
+		// 	System.out.println("False");
+		// }
 	}
 }
 
