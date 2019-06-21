@@ -20,12 +20,15 @@ class Solution {
 				if (count < g.V()) {
 					count = g.degree(each);
 					flag1 = each;
+					System.out.println(count);
 				}else if (count == g.degree(each)) {
 					flag2 = each;
 					count+= g.degree(each);
+					System.out.println(count);
 				}
 			}
 		}
+
 
 	}
 }
