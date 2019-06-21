@@ -1,0 +1,78 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2
+3
+
+Your Output: 
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+	at Graph.validateVertex(Graph.java:164)
+	at Graph.adj(Graph.java:191)
+	at Solution.main(Solution.java:18)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+1
+3
+
+Your Output: 
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+	at Graph.validateVertex(Graph.java:164)
+	at Graph.adj(Graph.java:191)
+	at Solution.main(Solution.java:18)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+0
+4
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+1
+3
+
+Your Output: 
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+	at Graph.validateVertex(Graph.java:164)
+	at Graph.adj(Graph.java:191)
+	at Solution.main(Solution.java:18)
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+1
+5
+
+Your Output: 
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
+	at Graph.validateVertex(Graph.java:164)
+	at Graph.adj(Graph.java:191)
+	at Solution.main(Solution.java:18)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+2
+1
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
+5
+0
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:14)
+----------------------------------------
+
