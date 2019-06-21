@@ -49,6 +49,8 @@ Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:5:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:11:38: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:11:39: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:12:38: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:12:44: ')' is preceded with whitespace. [ParenPad]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:14: Line is longer than 80 characters (found 85). [LineLength]
@@ -61,4 +63,4 @@ Starting audit...
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:23:34: '}' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Z5170 VVIN\Desktop\msit\1styr\ADS-2\Assignment\Remidial\ADS - 2 Remedial1\Solution.java:25:46: '+=' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 19 errors.

@@ -8,7 +8,7 @@ class Solution {
 		String input = scan.nextLine();
 		int q = Integer.parseInt(input);
 		int s = Integer.parseInt(input);
-		Graph g = new Graph(q);
+		Graph g = new Graph(q+1);
 		for (int i = 0; i < q ; i++ ) {
 			String[] str = scan.nextLine().split(" ");
 			g.addEdge(Integer.parseInt(str[0]),Integer.parseInt(str[1]));
